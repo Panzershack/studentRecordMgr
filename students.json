@@ -1,0 +1,71 @@
+[
+  {
+    "SID": 1001,
+    "FirstName": "Harryy",
+    "LastName": "Styles",
+    "Email": "harry@gmail.com",
+    "NearCity": "Kandy",
+    "Course": "Foundation,HND,Degree",
+    "Guardian": "James Cameron",
+    "Subjects": "ETF,ORDBMS,OOP,SE,HCI,IP"
+  },
+  {
+    "SID": 1002,
+    "FirstName": "Emmaa",
+    "LastName": "Watson",
+    "Email": "emma@gmail.com",
+    "NearCity": "Colombo",
+    "Course": "HND,Degree",
+    "Guardian": "David Smith",
+    "Subjects": "ORDBMS,OOP,HCI,IP"
+  },
+  {
+    "SID": 1003,
+    "FirstName": "Tom",
+    "LastName": "Holland",
+    "Email": "tom@gmail.com",
+    "NearCity": "Kandy",
+    "Course": [
+      "Foundation",
+      "Degree"
+    ],
+    "Guardian": "Mary Johnson",
+    "Subjects": [
+      "ETF",
+      "OOP",
+      "SE",
+      "HCI",
+      "IP"
+    ]
+  },
+  {
+    "SID": 1004,
+    "FirstName": "Lilyy",
+    "LastName": "Collins",
+    "Email": "lily@gmail.com",
+    "NearCity": "Galle",
+    "Course": "HND,Degree",
+    "Guardian": "Robert Thompson",
+    "Subjects": "ORDBMS,OOP,HCI,IP"
+  },
+  {
+    "SID": 1005,
+    "FirstName": "Robertt",
+    "LastName": "Pattinson",
+    "Email": "robert@gmail.com",
+    "NearCity": "Galle",
+    "Course": "Foundation,HND",
+    "Guardian": "Sarah Davis",
+    "Subjects": "ETF,ORDBMS,OOP,SE,HCI,IP"
+  },
+  {
+    "SID": 1007,
+    "FirstName": "Scarlettt",
+    "LastName": "Johansson",
+    "Email": "scarlett@gmail.com",
+    "NearCity": "Colombo",
+    "Course": "HND",
+    "Guardian": "Michael Anderson",
+    "Subjects": "ORDBMS,OOP,HCI,IP"
+  }
+]

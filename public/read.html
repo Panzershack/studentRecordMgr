@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Record Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-row">
+        <input type="text" id="search-input" placeholder="Enter criteria" />
+        <select id="search-dropdown">
+          <option value="SID">SID</option>
+          <option value="FirstName">First Name</option>
+          <option value="LastName">Last Name</option>
+          <option value="Email">Email</option>
+          <option value="NearCity">Nearest City</option>
+          <option value="Course">Course</option>
+          <option value="Guardian">Guardian</option>
+          <option value="Subjects">Subjects</option>
+        </select>
+        <button id="search-button">Show</button>
+      </div>
+      <table id="students-table">
+        <thead>
+          <tr>
+            <th>SID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Near City</th>
+            <th>Course</th>
+            <th>Guardian</th>
+            <th>Subjects</th>
+          </tr>
+        </thead>
+        <tbody id="students-body">
+          <!-- Student records will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="readScript.js"></script>
+  </body>
+</html>

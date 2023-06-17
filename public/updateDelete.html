@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Record Management System - Update/Delete</title>
+    <link rel="stylesheet" href="styles3.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Record Management System</h1>
+      <div class="content">
+        <div class="table-container">
+          <table id="students-table">
+            <thead>
+              <tr>
+                <th>SID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Near City</th>
+                <th>Course</th>
+                <th>Guardian</th>
+                <th>Subjects</th>
+              </tr>
+            </thead>
+            <tbody id="students-body"></tbody>
+          </table>
+        </div>
+        <div class="form-container">
+          <h2>Update / Delete Student Record</h2>
+          <form id="student-form">
+            <div class="form-group">
+              <label for="sid-input">SID:</label>
+              <input type="text" id="sid-input" required />
+            </div>
+            <div class="form-group">
+              <label for="first-name-input">First Name:</label>
+              <input type="text" id="first-name-input" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name-input">Last Name:</label>
+              <input type="text" id="last-name-input" required />
+            </div>
+            <div class="form-group">
+              <label for="email-input">Email:</label>
+              <input type="email" id="email-input" required />
+            </div>
+            <div class="form-group">
+              <label for="near-city-input">Near City:</label>
+              <input type="text" id="near-city-input" required />
+            </div>
+            <div class="form-group">
+              <label for="course-input">Course:</label>
+              <input type="text" id="course-input" required />
+            </div>
+            <div class="form-group">
+              <label for="guardian-input">Guardian:</label>
+              <input type="text" id="guardian-input" required />
+            </div>
+            <div class="form-group">
+              <label for="subjects-input">Subjects:</label>
+              <input type="text" id="subjects-input" required />
+            </div>
+            <div class="button-group">
+              <button type="submit" id="update-button">Update</button>
+              <button type="button" id="delete-button">Delete</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="updateDeleteScript.js"></script>
+  </body>
+</html>
