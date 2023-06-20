@@ -13,43 +13,6 @@ $(document).ready(function () {
     });
   }
 
-  // Function to render the student data in the table
-  function renderStudents(students) {
-    var tableBody = $("#studentsTableBody");
-    tableBody.empty();
-
-    students.forEach(function (student) {
-      var row =
-        "<tr>" +
-        "<td>" +
-        student.SID +
-        "</td>" +
-        "<td>" +
-        student.FirstName +
-        "</td>" +
-        "<td>" +
-        student.LastName +
-        "</td>" +
-        "<td>" +
-        student.Email +
-        "</td>" +
-        "<td>" +
-        student.NearCity +
-        "</td>" +
-        "<td>" +
-        student.Course.join(", ") +
-        "</td>" +
-        "<td>" +
-        student.Guardian +
-        "</td>" +
-        "<td>" +
-        student.Subjects.join(", ") +
-        "</td>" +
-        "</tr>";
-      tableBody.append(row);
-    });
-  }
-
   // Function to add a new student to the server
   $("#addStudentForm").on("submit", function (event) {
     event.preventDefault();
@@ -76,12 +39,31 @@ $(document).ready(function () {
         fetchStudents();
         $("#addStudentForm")[0].reset();
         alert("New student added to database");
+
+        // Generate QR code and display it
+        generateQRCode(student);
       },
       error: function () {
         console.log("Error adding student");
       },
     });
   });
+
+  // Function to generate QR code and display it
+  function generateQRCode(student) {
+    var qrCodeContainer = $("#qrCodeContainer");
+    qrCodeContainer.empty();
+
+    var qrCodeData = student.FirstName + " " + student.LastName + "\n";
+    qrCodeData += "SID: " + student.SID + "\n";
+    qrCodeData += "Email: " + student.Email;
+
+    var qrCode = new QRCode(qrCodeContainer.get(0), {
+      text: qrCodeData,
+      width: 128,
+      height: 128,
+    });
+  }
 
   // Initial fetch of student data
   fetchStudents();

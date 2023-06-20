@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Student Record Management System</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-    <h1>Student Record Management System</h1>
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Record Management System</title>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <h1>Student Record Management System</h1>
 
-    <h2>Add New Student</h2>
-    <form id="addStudentForm">
-      <label for="SID">SID:</label>
-      <input type="number" id="SID" name="SID" required /><br />
+  <h2>Add New Student</h2>
+  <form id="addStudentForm">
+    <label for="SID">SID:</label>
+    <input type="number" id="SID" name="SID" required /><br />
 
-      <label for="FirstName">First Name:</label>
-      <input type="text" id="FirstName" name="FirstName" required /><br />
+    <label for="FirstName">First Name:</label>
+    <input type="text" id="FirstName" name="FirstName" required /><br />
 
-      <label for="LastName">Last Name:</label>
-      <input type="text" id="LastName" name="LastName" required /><br />
+    <label for="LastName">Last Name:</label>
+    <input type="text" id="LastName" name="LastName" required /><br />
 
-      <label for="Email">Email:</label>
-      <input type="Email" id="Email" name="Email" required /><br />
+    <label for="Email">Email:</label>
+    <input type="email" id="Email" name="Email" required /><br />
 
-      <label for="NearCity">Nearest City:</label>
-      <input type="text" id="NearCity" name="NearCity" required /><br />
+    <label for="NearCity">Nearest City:</label>
+    <input type="text" id="NearCity" name="NearCity" required /><br />
 
-      <label for="Course">Course:</label>
-      <input type="text" id="Course" name="Course" required /><br />
+    <label for="Course">Course:</label>
+    <input type="text" id="Course" name="Course" required /><br />
 
-      <label for="Guardian">Guardian:</label>
-      <input type="text" id="Guardian" name="Guardian" required /><br />
+    <label for="Guardian">Guardian:</label>
+    <input type="text" id="Guardian" name="Guardian" required /><br />
 
-      <label for="Subjects">Subjects:</label>
-      <input type="text" id="Subjects" name="Subjects" required /><br />
+    <label for="Subjects">Subjects:</label>
+    <input type="text" id="Subjects" name="Subjects" required /><br />
 
-      <input type="submit" value="Add Student" />
-    </form>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+    <input type="submit" value="Add Student" />
+  </form>
+
+  <div id="qrCodeContainer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
