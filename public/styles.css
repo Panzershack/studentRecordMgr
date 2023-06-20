@@ -17,7 +17,8 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="submit"] {
+input[type="submit"],
+input[type="number"] {
   margin-bottom: 10px;
 }
 
