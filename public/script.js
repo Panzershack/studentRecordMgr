@@ -60,8 +60,8 @@ $(document).ready(function () {
 
     var qrCode = new QRCode(qrCodeContainer.get(0), {
       text: qrCodeData,
-      width: 128,
-      height: 128,
+      width: 250,
+      height: 250,
     });
   }
 
