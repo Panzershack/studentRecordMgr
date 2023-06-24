@@ -76,12 +76,31 @@ $(document).ready(function () {
         fetchStudents();
         $("#addStudentForm")[0].reset();
         alert("New student added to database");
+
+        // Generate QR code and display it
+        generateQRCode(student);
       },
       error: function () {
         console.log("Error adding student");
       },
     });
   });
+
+  // Function to generate QR code and display it
+  function generateQRCode(student) {
+    var qrCodeContainer = $("#qrCodeContainer");
+    qrCodeContainer.empty();
+
+    var qrCodeData = student.FirstName + " " + student.LastName + "\n";
+    qrCodeData += "SID: " + student.SID + "\n";
+    qrCodeData += "Email: " + student.Email;
+
+    var qrCode = new QRCode(qrCodeContainer.get(0), {
+      text: qrCodeData,
+      width: 200,
+      height: 200,
+    });
+  }
 
   // Initial fetch of student data
   fetchStudents();

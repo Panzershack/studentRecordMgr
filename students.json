@@ -1,7 +1,7 @@
 [
   {
     "SID": 1001,
-    "FirstName": "Harryy",
+    "FirstName": "Harry",
     "LastName": "Styles",
     "Email": "harry@gmail.com",
     "NearCity": "Kandy",
@@ -40,7 +40,7 @@
   },
   {
     "SID": 1004,
-    "FirstName": "Lilyy",
+    "FirstName": "Lily",
     "LastName": "Collins",
     "Email": "lily@gmail.com",
     "NearCity": "Galle",
@@ -50,7 +50,7 @@
   },
   {
     "SID": 1005,
-    "FirstName": "Robertt",
+    "FirstName": "Robert",
     "LastName": "Pattinson",
     "Email": "robert@gmail.com",
     "NearCity": "Galle",
@@ -60,7 +60,7 @@
   },
   {
     "SID": 1007,
-    "FirstName": "Scarlettt",
+    "FirstName": "Scarlet",
     "LastName": "Johansson",
     "Email": "scarlett@gmail.com",
     "NearCity": "Colombo",
