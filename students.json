@@ -1,15 +1,5 @@
 [
   {
-    "SID": 1001,
-    "FirstName": "Harry",
-    "LastName": "Styles",
-    "Email": "harry@gmail.com",
-    "NearCity": "Kandy",
-    "Course": "Foundation,HND,Degree",
-    "Guardian": "James Cameron",
-    "Subjects": "ETF,ORDBMS,OOP,SE,HCI,IP"
-  },
-  {
     "SID": 1002,
     "FirstName": "Emmaa",
     "LastName": "Watson",

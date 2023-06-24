@@ -110,7 +110,7 @@ app.get("/updateDelete", (req, res) => {
 });
 
 // Route to serve index.html at /index and /index.html
-app.get(["/index", "/index.html"], (req, res) => {
+app.get("/index", (req, res) => {
   res.sendFile(__dirname + "/public/index.html");
 });
 

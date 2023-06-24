@@ -1,16 +1,13 @@
 body {
+  font-family: "Belanosima", sans-serif;
   background-color: #001c30;
   color: #dafffb;
+  margin-top: 2%;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .content {
@@ -106,4 +103,57 @@ h1 {
   background-color: #d4edda;
   color: #155724;
   border-color: #c3e6cb;
+}
+
+/* Navbar Styles */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #e9ecef;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 77%;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 30px;
+  background-color: #176b87;
+  color: #dafffb;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  position: fixed;
+  top: 3%;
+  left: 93%;
+  z-index: 1;
+}
+
+.openbtn:hover {
+  background-color: #64ccc5;
 }

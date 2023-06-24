@@ -131,3 +131,13 @@ $(document).ready(function () {
   // Initialize the page
   showAllStudents();
 });
+
+// Navbar Functionality
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

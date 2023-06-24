@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Student Record Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -16,6 +22,7 @@
     <h1>Student Record Management System</h1>
 
     <h2>Add New Student</h2>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
     <form id="addStudentForm">
       <label for="SID">SID:</label>
       <input type="number" id="SID" name="SID" required />
@@ -43,6 +50,14 @@
 
       <input type="submit" value="Add Student" class="submit-btn" />
     </form>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index">Add Student</a>
+      <a href="updateDelete">Update/Delete Student</a>
+      <a href="read">View All Students</a>
+    </div>
 
     <div id="qrCodeContainer">Student QR code will generate here</div>
 
