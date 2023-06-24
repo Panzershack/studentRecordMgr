@@ -13,6 +13,43 @@ $(document).ready(function () {
     });
   }
 
+  // Function to render the student data in the table
+  function renderStudents(students) {
+    var tableBody = $("#studentsTableBody");
+    tableBody.empty();
+
+    students.forEach(function (student) {
+      var row =
+        "<tr>" +
+        "<td>" +
+        student.SID +
+        "</td>" +
+        "<td>" +
+        student.FirstName +
+        "</td>" +
+        "<td>" +
+        student.LastName +
+        "</td>" +
+        "<td>" +
+        student.Email +
+        "</td>" +
+        "<td>" +
+        student.NearCity +
+        "</td>" +
+        "<td>" +
+        student.Course.join(", ") +
+        "</td>" +
+        "<td>" +
+        student.Guardian +
+        "</td>" +
+        "<td>" +
+        student.Subjects.join(", ") +
+        "</td>" +
+        "</tr>";
+      tableBody.append(row);
+    });
+  }
+
   // Function to add a new student to the server
   $("#addStudentForm").on("submit", function (event) {
     event.preventDefault();
@@ -60,8 +97,8 @@ $(document).ready(function () {
 
     var qrCode = new QRCode(qrCodeContainer.get(0), {
       text: qrCodeData,
-      width: 250,
-      height: 250,
+      width: 200,
+      height: 200,
     });
   }
 

@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 20px;
   background-color: #001c30;
-  color: #fff;
+  color: #dafffb;
 }
 
 h1 {
@@ -46,6 +46,9 @@ form input {
 }
 
 #qrCodeContainer {
+  height: 200px;
+  width: 200px;
+  border: 5px solid #176b87;
   text-align: center;
   position: absolute;
   display: inline-block;
