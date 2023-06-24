@@ -79,3 +79,13 @@ $(document).ready(function () {
   // Initial display of all students
   showAllStudents();
 });
+
+// Navbar Functionality
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}

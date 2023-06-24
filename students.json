@@ -1,15 +1,5 @@
 [
   {
-    "SID": 1001,
-    "FirstName": "Harryy",
-    "LastName": "Styles",
-    "Email": "harry@gmail.com",
-    "NearCity": "Kandy",
-    "Course": "Foundation,HND,Degree",
-    "Guardian": "James Cameron",
-    "Subjects": "ETF,ORDBMS,OOP,SE,HCI,IP"
-  },
-  {
     "SID": 1002,
     "FirstName": "Emmaa",
     "LastName": "Watson",
@@ -40,7 +30,7 @@
   },
   {
     "SID": 1004,
-    "FirstName": "Lilyy",
+    "FirstName": "Lily",
     "LastName": "Collins",
     "Email": "lily@gmail.com",
     "NearCity": "Galle",
@@ -50,7 +40,7 @@
   },
   {
     "SID": 1005,
-    "FirstName": "Robertt",
+    "FirstName": "Robert",
     "LastName": "Pattinson",
     "Email": "robert@gmail.com",
     "NearCity": "Galle",
@@ -60,7 +50,7 @@
   },
   {
     "SID": 1007,
-    "FirstName": "Scarlettt",
+    "FirstName": "Scarlet",
     "LastName": "Johansson",
     "Email": "scarlett@gmail.com",
     "NearCity": "Colombo",
